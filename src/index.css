@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 80px 80px 20px 80px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  text-align: left;
+}
+
+.header h1 {
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.header p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: left;
+  margin-top: 90px;
+  gap: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #E4E6E7;
+  cursor: pointer;
+  border-radius: 100px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+
+
+}
+
+.tabs button.active {
+  background: #081E346B;
+  color: white;
+}
+
+.plas-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #081E34;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -3%;
+}
+
+.add-task {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  position: relative;
+}
+
+.add-task-modal {
+  position: absolute;
+  top: -1000%;
+  right: 5%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: #E4E6E7;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.add-task-modal p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+
+.add-task-modal input {
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 10px;
+  border: none;
+  padding-left: 8px;
+}
+
+.add-task-modal-btn {
+  background-color: #081E34;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 80px;
+  font-weight: 700;
+  text-align: left;
+
+
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 0;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-dropdown {
+  position: absolute;
+  background: #E4E6E7;
+  border: 1px ;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 8px 4px;
+}
+
+.menu-dropdown button {
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background-color: #081E3433;
+}
+
+.menu-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-dropdown i {
+  font-size: 16px;
+}
+
+.task-text {
+  font-size: 16px;
+}
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.checkbox.checked {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+}
+
+.checkbox.checked::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  bottom: 7px;
+  width: 7px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #959595;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
